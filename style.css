@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrap {
+  margin: 100px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.container h1 {
+  box-sizing: border-box;
+  font-size: 70px;
+  margin-bottom: .5em;
+  display: flex;
+}
+
+.container h1::before,
+.container h1::after {
+  content: '';
+  display: block;
+  width: 4em;
+  height: 5px;
+  background: #aaa;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.container h1::before {
+  margin-right: .5em;
+}
+
+.container h1::after {
+  margin-left: .5em;
+}
+
+.container .txt {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.container .txt p {
+  margin-bottom: 1em;
+}
